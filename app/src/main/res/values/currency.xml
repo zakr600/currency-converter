@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="currency_names">
+        <item>RUB</item>
+        <item>EUR</item>
+        <item>USD</item>
+        <item>GBP</item>
+        <item>CHF</item>
+    </string-array>
+
+    <string-array name="currency_rates">
+        <item>76.8001</item>
+        <item>1.0000</item>
+        <item>1.1174</item>
+        <item>0.89083</item>
+        <item>1.0793</item>
+    </string-array>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/currency_names"
+            android:id="@+id/currency_from" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_right_arrow"
+            tools:ignore="VectorDrawableCompat" />
+
+        <Spinner
+            android:id="@+id/currency_to"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/currency_names" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:id="@+id/convert"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/res"
+        android:textSize="20sp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_updated"
+        android:textSize="20sp"
+        android:text="Last update: 03.06.2020"/>
+</LinearLayout>

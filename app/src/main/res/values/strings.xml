@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Конвертер валют</string>
+    <string name="convert">Перевести</string>
+    <string name="invalid_input">Некорректный ввод!</string>
+    <string name="create_date">2020–06-02</string>
+    <string name="last_update">Актуально на</string>
+</resources>
